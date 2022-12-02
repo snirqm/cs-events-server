@@ -10,7 +10,6 @@ export const mainRoute = (req: IncomingMessage, res: ServerResponse) => {
   res.setHeader("Content-Type", "text/html");
   res.write("<h1>Hello Yedidi</h1>");
   res.end();
-  res;
 };
 
 export const getExample = (req: IncomingMessage, res: ServerResponse) => {
