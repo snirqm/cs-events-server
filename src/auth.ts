@@ -112,7 +112,7 @@ export const loginRoute = (req: IncomingMessage, res: ServerResponse) => {
   });
 };
 
-export const signinRoute = (req: IncomingMessage, res: ServerResponse) => {
+export const signupRoute = (req: IncomingMessage, res: ServerResponse) => {
   let body = "";
   req.on("data", (chunk) => {
     body += chunk.toString();

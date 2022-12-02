@@ -3,8 +3,8 @@ import { createServer, IncomingMessage, ServerResponse } from "http";
 // import with .js, and not ts.
 // for more info: https://devblogs.microsoft.com/typescript/announcing-typescript-4-7/#type-in-package-json-and-new-extensions
 import { getExample, mainRoute, createRoute } from "./routes.js";
-import { GET_SEGEL, LOGIN, SIGNIN } from "./const.js";
-import { loginRoute, signinRoute } from "./auth.js";
+import { GET_SEGEL, LOGIN, SIGNUP } from "./const.js";
+import { loginRoute, signupRoute } from "./auth.js";
 
 const port = process.env.PORT || 3000;
 
@@ -17,8 +17,8 @@ const server = createServer((req: IncomingMessage, res: ServerResponse) => {
     case LOGIN:
       loginRoute(req, res);
       break;
-    case SIGNIN:
-      signinRoute(req, res);
+    case SIGNUP:
+      signupRoute(req, res);
       break;
 
     default:
