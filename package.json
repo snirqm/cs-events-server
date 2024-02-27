@@ -1,5 +1,5 @@
 {
-  "name": "hw3-node-ts-auth",
+  "name": "cs-events-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "test": "node scripts/test.js"
   },
   "keywords": [],
-  "author": "nissano-wsp-2022",
+  "author": "Snir Bachar",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.11.9",
